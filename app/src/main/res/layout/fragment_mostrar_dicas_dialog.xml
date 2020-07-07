@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="480dp"
+    android:minWidth="320dp"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/primaryTextInvertedColor"
+        android:textSize="20sp"
+        android:text="Por favor, aguarde. Uma dica para solucionar o enigma aparecerá em breve... "
+        />
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mostrar_dicas_dlg_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        card_view:cardBackgroundColor="@color/accentTriadicCollor"
+        card_view:cardCornerRadius="4dp"
+        app:contentPadding="25dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="6dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/mostrar_dicas_dlg_contador_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/accentCollor"
+            android:textSize="128sp"
+            tools:text="29"
+            />
+
+        <TextView
+            android:id="@+id/mostrar_dicas_dlg_dica_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/accentCollor"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            tools:text="&quot;É o único planeta identificado no sistema solar com água no estado físico liquido&quot;"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentBottom="true">
+
+        <View android:id="@+id/strut"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/mostrar_dicas_dlg_ver_outra_dica_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/strut"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"
+            android:text="Ver outra dica (+30s)"
+            android:theme="@style/AppTheme.Button"/>
+
+        <Button
+            android:id="@+id/mostrar_dicas_dlg_tentar_responder_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/strut"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:text="Tentar responder"
+            android:theme="@style/AppTheme.Button"/>
+
+        <Button
+            android:id="@+id/mostrar_dicas_dlg_cancelar_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/strut"
+            android:layout_alignParentRight="true"
+            android:text="Cancelar"
+            android:theme="@style/AppTheme.Button"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

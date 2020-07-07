@@ -1,0 +1,88 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+        <item name="actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+        <item name="colorControlActivated">@color/controlActivated</item>
+        <item name="colorControlNormal">@color/secondaryLightColor</item>
+        <item name="colorAccent">@color/accentCollor</item>
+        <item name="cardViewStyle">@style/CardView</item>
+        <item name="editTextStyle">@style/EditText</item>
+        <item name="actionOverflowMenuStyle">@style/MyActionOverflowMenuStyle</item>
+        <item name="android:windowAnimationStyle">@style/AppTheme.WindowTransition</item>
+    </style>
+
+    <!-- Setting window animation -->
+    <style name="AppTheme.WindowTransition">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.noAnimTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="AppCompat.NoActionBar.FullScreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyActionOverflowMenuStyle" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:overlapAnchor" tools:ignore="NewApi">false</item>
+        <item name="android:dropDownVerticalOffset">5.0dip</item>
+        <item name="android:popupBackground">@color/primaryColor</item>
+    </style>
+
+    <style name="MyAlertDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">false</item>
+
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@color/primaryTextInvertedColor</item>
+
+        <!-- Used for the background -->
+        <item name="android:background">@color/secondaryBackgroundColor</item>
+        <item name="android:windowBackground">@color/secondaryBackgroundColor</item>
+    </style>
+
+    <style name="EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textCursorDrawable">@drawable/color_cursor</item>
+        <item name="android:backgroundTint">@color/primaryTextInvertedColor</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="colorButtonNormal">@color/secondaryBackgroundColorDark</item>
+        <item name="android:textColor">@color/secondaryLightColor</item>
+    </style>
+
+    <style name="AppTheme.FlatButton" parent="Theme.AppCompat">
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
+        <item name="colorControlHighlight">@color/secondaryColor</item>
+        <item name="colorAccent">@color/secondaryLightColor</item>
+    </style>
+
+    <style name="MyActionButtonOverflow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_options_menu_button</item>
+        <item name="android:background">?android:attr/actionBarItemBackground</item>
+        <item name="android:contentDescription">""</item>
+
+        <!--<item name="android:minWidth">24dp</item>-->
+        <!--<item name="android:maxWidth">40dp</item>-->
+        <!--<item name="android:width">40dp</item>-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

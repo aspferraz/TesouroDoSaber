@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/jornada_container_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/jornada_imageview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        />
+<!--        android:src="@drawable/astronomia_background"-->
+
+    <RelativeLayout
+        android:id="@+id/titulo_enigma_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_border_trans_background">
+
+        <TextView
+            android:id="@+id/titulo_enigma_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/accentTriadicCollor"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textColor="@color/accentCollor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="O nosso sistema Solar é formado por nove planetas. Qual é o nome do terceiro planeta do sistema?" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/alternativas_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo_enigma_layout"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_border_trans_background">
+
+        <RadioGroup
+            android:id="@+id/alternativas_rgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/alternativa_1_rbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accentCollor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Marte" />
+
+            <RadioButton
+                android:id="@+id/alternativa_2_rbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accentCollor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Terra" />
+
+            <RadioButton
+                android:id="@+id/alternativa_3_rbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accentCollor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Vênus" />
+
+            <RadioButton
+                android:id="@+id/alternativa_4_rbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accentCollor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Plutão" />
+
+            <RadioButton
+                android:id="@+id/alternativa_5_rbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accentCollor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Jupter" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/strut"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true" />
+
+
+        <ImageButton
+            android:id="@+id/responder_button"
+            android:layout_alignLeft="@id/strut"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+                                    android:background="@drawable/border_colored"
+                                    android:src="@drawable/btn_responder_1"
+
+
+            />
+        <!--                            android:background="@drawable/border_colored"-->
+        <!--                            android:src="@drawable/btn_responder_1"-->
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primaryColor">#151515</color>
+    <color name="primaryLightColor">#454545</color>
+    <color name="primaryDarkColor">#000000</color>
+
+    <color name="secondaryColor">#4202b5</color>
+    <color name="secondarySplitComplementaryColor">#4bb73a</color>
+    <color name="secondaryTransColor">#c84202b5</color>
+    <color name="transColor">#c8454545</color>
+    <color name="secondaryLightColor">#ffffff</color>
+    <color name="secondaryDarkColor">#34018e</color>
+
+    <color name="backgroundColor">#f7f7f7</color>
+    <color name="backgroundInverseColor">#000000</color>
+    <color name="secondaryBackgroundColorDark">#303030</color>
+    <color name="secondaryBackgroundColor">#424242</color>
+
+    <color name="controlActivated">#ffffff</color>
+    <color name="accentCollor">#ffffff</color>
+    <color name="accentComplementaryCollor">#55ff00</color>
+    <color name="accentTriadicCollor">#ffaa00</color>
+    <color name="hintColor">#f6f1ff</color>
+
+    <color name="primaryTransColor">#50000000</color>
+
+    <color name="primaryBorderColor">#e0e0e0</color>
+    <color name="primaryBorderColorDark">#757575</color>
+    <color name="secondaryBorderColor">#ffffff</color>
+
+    <color name="primaryTextColor">#212121</color>
+    <color name="primaryTextColorLight">#757575</color>
+    <color name="secondaryTextColor">#ffffff</color>
+    <color name="secondaryTextColorDark">#bdbdbd</color>
+    <color name="primaryTextInvertedColor">#ffffff</color>
+    <color name="secondaryTextInvertedColor">#000000</color>
+    <color name="iconsColor">#FFFFFF</color>
+
+    <color name="dividerColor">#757575</color>
+    <color name="favoriteButtonColor">#ef0224</color>
+    <!--<color name="progressColor">#5702ef</color>-->
+    <color name="progressColor">@color/accentCollor</color>
+
+    <color name="dayPressed">@color/controlActivated</color>
+    <color name="daySelected">@color/controlActivated</color>
+    <color name="dayDeselected">@android:color/darker_gray</color>
+
+    <color name="gridItemBackgroundColor">#303030</color>
+
+
+
+</resources>

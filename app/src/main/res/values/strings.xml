@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TesouroDoSaber</string>
+    <string name="main_label">Tesouro Do Saber</string>
+    <string name="enigma_label">Enigma</string>
+    <string name="qrcodedecoder_label">QRCode Reader</string>
+    <string name="localizacao_label">Localizacao</string>
+    <string name="fimjogo_label">Game Over!</string>
+    <string name="resposta_correta_label">Resposta correta.</string>
+    <string name="resposta_errada_label">Resposta errada.</string>
+    <string name="dica_dialog_title">Dica</string>
+    <string name="equipe_dialog_title">Equipe</string>
+<!--    <string name="qrcode_label">Leitura QRCode</string>-->
+    <string name="final_label">Game Over</string>
+
+
+    <string name="dlg_ok_btn_text">Ok</string>
+    <string name="dlg_yes_btn_text">Sim</string>
+    <string name="dlg_no_btn_text">Não</string>
+    <string name="dlg_close_btn_text">Fechar</string>
+    <string name="dlg_confirm_btn_text">Confirmar</string>
+    <string name="dlg_apply_btn_text">Aplicar</string>
+    <string name="dlg_cancel_btn_text">Cancelar</string>
+    <string name="dlg_stop_btn_text">Parar</string>
+    <string name="dlg_setup_btn_text">Configurar</string>
+</resources>
